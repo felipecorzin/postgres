@@ -14,7 +14,7 @@ export class UsersService {
   ) {}
 
    // Post a single user
-  async createUser(createUserDto: CreateUserDto): Promise<User> {
+  async createUser(createUserDto: CreateUserDto) {
     return await this.userRepository.save(createUserDto);
   }
 
